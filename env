@@ -1,0 +1,23 @@
+# This is a file holding the environment variables to configure your project.
+# feel free to change them according to your actual configuration. In order to
+# load the variables in your shell, please type `source env`. If you're using
+# PyCharm, you can use the "Env File" plugin to load this file automatically
+# into your running environment.
+
+set -a
+
+DEBUG=yes
+DEV=no
+
+VIDEO_NAME=Falcon Heavy Test Flight (Hosted Webcast)-wbSwFU6tY1c
+TEST_VIDEO_NAME=button.mp4
+
+BERNARD_SETTINGS_FILE=
+
+BERNARD_BASE_URL=http://localhost:8666
+API_URL=https://framex.with-madrid.dev/api/
+TEST_API_URL=https://{id}.ngrok-free.app
+REDIS_URL=http://localhost:6379
+
+WEBVIEW_SECRET_KEY=
+TELEGRAM_TOKEN=

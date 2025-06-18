@@ -1,0 +1,11 @@
+.idea
+*.pyc
+*.un~
+*.swp
+MANIFEST
+/dist
+*.log
+.cache
+*.egg-info
+.env
+/original
