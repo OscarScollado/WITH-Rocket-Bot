@@ -31,3 +31,8 @@ plus the ``TelegramMedia`` extension class.
 
 The code follows a readable and concise pattern, making it easy to maintain along with
 the stringdocs all over the application.
+
+
+## Flowchart of the FSM
+
+![flowchart](flowchart.png)
