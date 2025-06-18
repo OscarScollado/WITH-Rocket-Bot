@@ -68,7 +68,7 @@ class AskState(WithRocketBotState):
             raise ValueError("No frame to send!")
 
         lyr_image = lyr.Image(get_frame_url(context["frame"]))
-        lyr_image.caption = f"Question number {context["count"]}"
+        lyr_image.caption = f"Question number {context["count"]} (frame {context["frame"]})"
 
         try:
             _ = self.request.get_layer(lyr.Postback).payload["action"]
@@ -110,5 +110,6 @@ class ByeState(WithRocketBotState):
         self.send(lyr.Sleep(0.33))
         self.send(
             lyr.Image(get_frame_url(context["frame"])),
-            lyr.Text(f"There you have it!")
+            lyr.Text(f"There you have it!"),
+            lyr.Text(f"It is frame #{context["frame"]}")
         )

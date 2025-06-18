@@ -13,7 +13,7 @@ class TelegramMedia(Telegram):
 
     def __init__(self):
         super().__init__()
-        TelegramMedia.PATTERNS["media"] = "^Image (Update|Text InlineKeyboard?)?$"
+        TelegramMedia.PATTERNS["media"] = "^Image (Update|Text (InlineKeyboard|Text)?)?$"
 
         if settings.DEV:
             import logging
